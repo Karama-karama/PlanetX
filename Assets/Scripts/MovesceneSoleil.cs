@@ -11,7 +11,7 @@ public class MovesceneSoleil : MonoBehaviour
     {
         if (other.CompareTag("Soleil"))
         {
-            SceneManager.LoadScene(14);
+            SceneManager.LoadScene(11);
         }
     }
 }

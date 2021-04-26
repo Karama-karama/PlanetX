@@ -655,7 +655,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de4fd52c324d504498e176762191476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 0
   rotationspeed: 10
+  Comet: {fileID: 0}
 --- !u!50 &178508961
 Rigidbody2D:
   serializedVersion: 4
@@ -976,7 +979,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de4fd52c324d504498e176762191476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 0
   rotationspeed: 10
+  Comet: {fileID: 0}
 --- !u!50 &183005073
 Rigidbody2D:
   serializedVersion: 4
@@ -1483,6 +1489,107 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &297639771
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 550578527}
+    m_Modifications:
+    - target: {fileID: 1095640572745213570, guid: 7585ac3a488ab6f49821ff8a63661906,
+        type: 3}
+      propertyPath: m_Name
+      value: Soleil
+      objectReference: {fileID: 0}
+    - target: {fileID: 1095640572745213570, guid: 7585ac3a488ab6f49821ff8a63661906,
+        type: 3}
+      propertyPath: m_TagString
+      value: fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 5541864275331236445, guid: 7585ac3a488ab6f49821ff8a63661906,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.0278419
+      objectReference: {fileID: 0}
+    - target: {fileID: 5541864275331236445, guid: 7585ac3a488ab6f49821ff8a63661906,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.09554571
+      objectReference: {fileID: 0}
+    - target: {fileID: 5541864275331236445, guid: 7585ac3a488ab6f49821ff8a63661906,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5541864275331236445, guid: 7585ac3a488ab6f49821ff8a63661906,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5541864275331236445, guid: 7585ac3a488ab6f49821ff8a63661906,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5541864275331236445, guid: 7585ac3a488ab6f49821ff8a63661906,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.16454193
+      objectReference: {fileID: 0}
+    - target: {fileID: 5541864275331236445, guid: 7585ac3a488ab6f49821ff8a63661906,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.98637015
+      objectReference: {fileID: 0}
+    - target: {fileID: 5541864275331236445, guid: 7585ac3a488ab6f49821ff8a63661906,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5541864275331236445, guid: 7585ac3a488ab6f49821ff8a63661906,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5541864275331236445, guid: 7585ac3a488ab6f49821ff8a63661906,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5541864275331236445, guid: 7585ac3a488ab6f49821ff8a63661906,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -378.941
+      objectReference: {fileID: 0}
+    - target: {fileID: 5541864275331236445, guid: 7585ac3a488ab6f49821ff8a63661906,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.12161777
+      objectReference: {fileID: 0}
+    - target: {fileID: 5541864275331236445, guid: 7585ac3a488ab6f49821ff8a63661906,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.12161777
+      objectReference: {fileID: 0}
+    - target: {fileID: 5541864275331236445, guid: 7585ac3a488ab6f49821ff8a63661906,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.12161777
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559612623717271497, guid: 7585ac3a488ab6f49821ff8a63661906,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d7f94303a5f51b94abc4f9190b73547d,
+        type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7585ac3a488ab6f49821ff8a63661906, type: 3}
+--- !u!50 &297639772 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 5065687427887967407, guid: 7585ac3a488ab6f49821ff8a63661906,
+    type: 3}
+  m_PrefabInstance: {fileID: 297639771}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &314773341
 GameObject:
   m_ObjectHideFlags: 0
@@ -1838,7 +1945,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de4fd52c324d504498e176762191476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 0
   rotationspeed: 10
+  Comet: {fileID: 0}
 --- !u!50 &358727532
 Rigidbody2D:
   serializedVersion: 4
@@ -2735,7 +2845,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de4fd52c324d504498e176762191476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 0
   rotationspeed: 10
+  Comet: {fileID: 0}
 --- !u!50 &424884384
 Rigidbody2D:
   serializedVersion: 4
@@ -2869,7 +2982,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de4fd52c324d504498e176762191476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 0
   rotationspeed: 10
+  Comet: {fileID: 0}
 --- !u!50 &433368787
 Rigidbody2D:
   serializedVersion: 4
@@ -3864,6 +3980,135 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 498285654}
   m_CullTransparentMesh: 0
+--- !u!1001 &550578526
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1726998045}
+    m_Modifications:
+    - target: {fileID: 8682175732903780804, guid: 56040278f8e4ff64c9af13d54e82abab,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.475
+      objectReference: {fileID: 0}
+    - target: {fileID: 8682175732903780804, guid: 56040278f8e4ff64c9af13d54e82abab,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.123
+      objectReference: {fileID: 0}
+    - target: {fileID: 8682175732903780804, guid: 56040278f8e4ff64c9af13d54e82abab,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8682175732903780804, guid: 56040278f8e4ff64c9af13d54e82abab,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8682175732903780804, guid: 56040278f8e4ff64c9af13d54e82abab,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8682175732903780804, guid: 56040278f8e4ff64c9af13d54e82abab,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8682175732903780804, guid: 56040278f8e4ff64c9af13d54e82abab,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8682175732903780804, guid: 56040278f8e4ff64c9af13d54e82abab,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8682175732903780804, guid: 56040278f8e4ff64c9af13d54e82abab,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8682175732903780804, guid: 56040278f8e4ff64c9af13d54e82abab,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8682175732903780804, guid: 56040278f8e4ff64c9af13d54e82abab,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8682175732903780806, guid: 56040278f8e4ff64c9af13d54e82abab,
+        type: 3}
+      propertyPath: m_Name
+      value: spaceship
+      objectReference: {fileID: 0}
+    - target: {fileID: 8682175732903780811, guid: 56040278f8e4ff64c9af13d54e82abab,
+        type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1354365277}
+    - target: {fileID: 8682175732903780811, guid: 56040278f8e4ff64c9af13d54e82abab,
+        type: 3}
+      propertyPath: Comet
+      value: 
+      objectReference: {fileID: 297639772}
+    - target: {fileID: 8682175732903780811, guid: 56040278f8e4ff64c9af13d54e82abab,
+        type: 3}
+      propertyPath: NewSpaceShip
+      value: 
+      objectReference: {fileID: 1726998045}
+    - target: {fileID: 8682175732903780811, guid: 56040278f8e4ff64c9af13d54e82abab,
+        type: 3}
+      propertyPath: Soleil
+      value: 
+      objectReference: {fileID: 297639772}
+    - target: {fileID: 8682175732903780811, guid: 56040278f8e4ff64c9af13d54e82abab,
+        type: 3}
+      propertyPath: soleilfils
+      value: 
+      objectReference: {fileID: 2035840055}
+    - target: {fileID: 8682175732903780811, guid: 56040278f8e4ff64c9af13d54e82abab,
+        type: 3}
+      propertyPath: Clone
+      value: 
+      objectReference: {fileID: 297639772}
+    - target: {fileID: 8682175732903780811, guid: 56040278f8e4ff64c9af13d54e82abab,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8682175732903780809, guid: 56040278f8e4ff64c9af13d54e82abab, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 56040278f8e4ff64c9af13d54e82abab, type: 3}
+--- !u!4 &550578527 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8682175732903780804, guid: 56040278f8e4ff64c9af13d54e82abab,
+    type: 3}
+  m_PrefabInstance: {fileID: 550578526}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &550578528 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8682175732903780806, guid: 56040278f8e4ff64c9af13d54e82abab,
+    type: 3}
+  m_PrefabInstance: {fileID: 550578526}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &550578529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550578528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9e8899e9afef3d428a85d16c42b93d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &571645133
 GameObject:
   m_ObjectHideFlags: 0
@@ -5674,7 +5919,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de4fd52c324d504498e176762191476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 0
   rotationspeed: 10
+  Comet: {fileID: 0}
 --- !u!50 &862648861
 Rigidbody2D:
   serializedVersion: 4
@@ -5970,7 +6218,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de4fd52c324d504498e176762191476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 0
   rotationspeed: 10
+  Comet: {fileID: 0}
 --- !u!50 &906890182
 Rigidbody2D:
   serializedVersion: 4
@@ -7985,7 +8236,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de4fd52c324d504498e176762191476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 0
   rotationspeed: 10
+  Comet: {fileID: 0}
 --- !u!50 &1199833607
 Rigidbody2D:
   serializedVersion: 4
@@ -8541,7 +8795,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de4fd52c324d504498e176762191476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 0
   rotationspeed: 10
+  Comet: {fileID: 0}
 --- !u!50 &1267030982
 Rigidbody2D:
   serializedVersion: 4
@@ -9127,7 +9384,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de4fd52c324d504498e176762191476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 0
   rotationspeed: 10
+  Comet: {fileID: 0}
 --- !u!50 &1342602244
 Rigidbody2D:
   serializedVersion: 4
@@ -9475,7 +9735,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de4fd52c324d504498e176762191476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 0
   rotationspeed: 10
+  Comet: {fileID: 0}
 --- !u!50 &1412394354
 Rigidbody2D:
   serializedVersion: 4
@@ -9609,7 +9872,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de4fd52c324d504498e176762191476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 0
   rotationspeed: 10
+  Comet: {fileID: 0}
 --- !u!50 &1422789277
 Rigidbody2D:
   serializedVersion: 4
@@ -9718,7 +9984,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1431118053
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9833,6 +10099,9 @@ MonoBehaviour:
   maxHealth: 3
   currentHealth: 0
   healthBar: {fileID: 1354365277}
+  Soleil: {fileID: 0}
+  soleilfils: {fileID: 0}
+  Clone: {fileID: 0}
 --- !u!58 &1431118058
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9907,7 +10176,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de4fd52c324d504498e176762191476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 0
   rotationspeed: 10
+  Comet: {fileID: 0}
 --- !u!50 &1453697622
 Rigidbody2D:
   serializedVersion: 4
@@ -10830,6 +11102,50 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1643938298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1643938300}
+  - component: {fileID: 1643938299}
+  m_Layer: 0
+  m_Name: TestAleatoire
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1643938299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643938298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4b89a2d3ad0bc741beddb7010a7c290, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Comet: {fileID: 183005073}
+--- !u!4 &1643938300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643938298}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.9, y: -2.7600002, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1650197884
 GameObject:
   m_ObjectHideFlags: 0
@@ -10957,7 +11273,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de4fd52c324d504498e176762191476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 0
   rotationspeed: 10
+  Comet: {fileID: 0}
 --- !u!50 &1683436551
 Rigidbody2D:
   serializedVersion: 4
@@ -11172,7 +11491,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de4fd52c324d504498e176762191476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 0
   rotationspeed: 10
+  Comet: {fileID: 0}
 --- !u!50 &1694862397
 Rigidbody2D:
   serializedVersion: 4
@@ -11341,6 +11663,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1726998044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1726998045}
+  m_Layer: 0
+  m_Name: NewSpaceShip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1726998045
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726998044}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.475, y: -3.8330002, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 550578527}
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1727775812
 GameObject:
   m_ObjectHideFlags: 0
@@ -13319,7 +13672,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8de4fd52c324d504498e176762191476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 10
+  currentHealth: 0
   rotationspeed: 10
+  Comet: {fileID: 0}
 --- !u!50 &2000091545
 Rigidbody2D:
   serializedVersion: 4
@@ -13577,7 +13933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd4e956fc0f0d6045922e4498f398118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceship: {fileID: 1431118054}
+  spaceship: {fileID: 550578527}
   offset: {x: 0, y: 0, z: -5}
 --- !u!1 &2024731635
 GameObject:
@@ -13859,6 +14215,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2035840054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2035840055}
+  m_Layer: 0
+  m_Name: soleilfils
+  m_TagString: soleilfils
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2035840055
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035840054}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.31, y: -0.41, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 550578527}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2041835700
 GameObject:
   m_ObjectHideFlags: 0

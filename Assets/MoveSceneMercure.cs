@@ -9,7 +9,7 @@ public class MoveSceneMercure : MonoBehaviour
     {
         if (other.CompareTag("Mercure"))
         {
-            SceneManager.LoadScene(14);
+            SceneManager.LoadScene(5);
         }
     }
 }

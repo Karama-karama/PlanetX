@@ -10,7 +10,7 @@ public class Saturne : MonoBehaviour
     {
         if (other.CompareTag("Saturne"))
         {
-            SceneManager.LoadScene(14);
+            SceneManager.LoadScene(10);
         }
     }
 }

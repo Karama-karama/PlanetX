@@ -9,7 +9,7 @@ public class MovesceneJupiter : MonoBehaviour
     {
         if (other.CompareTag("jupiter"))
         {
-            SceneManager.LoadScene(14);
+            SceneManager.LoadScene(2);
         }
     }
 }

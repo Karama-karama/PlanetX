@@ -9,7 +9,7 @@ public class Movescene : MonoBehaviour
     {
         if (other.CompareTag("Mars"))
         {
-            SceneManager.LoadScene(14);
+            SceneManager.LoadScene(4);
         }
     }
 }

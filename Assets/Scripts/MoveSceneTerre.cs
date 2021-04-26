@@ -9,7 +9,7 @@ public class MoveSceneTerre : MonoBehaviour
     {
         if (other.CompareTag("Terre"))
         {
-            SceneManager.LoadScene(14);
+            SceneManager.LoadScene(6);
         }
         //else
         // other.CompareTag ("Neptune");

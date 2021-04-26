@@ -31,10 +31,11 @@ public class Rotation : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, rotZ);
         // Création dynamique des clones 
        /* if (Input.GetKeyDown(KeyCode.Space))
-            Instantiate(Comet, new Vector3(NewSpaceShip.position.x,NewSpaceShip.position.y,2),NewSpaceShip.rotation);**/
+            Instantiate(Comet, new Vector3(NewSpaceShip.position.x,NewSpaceShip.position.y,2),NewSpaceShip.rotation);
+        **/
     void OnCollisionEnter2D(Collision2D Obj)
     {
-        if (Obj.gameObject.tag == "Soleil")
+        if (Obj.gameObject.tag == "fire")
         {// health update
       print("Touché cartouche");
         takeDamage(1);
@@ -43,7 +44,7 @@ public class Rotation : MonoBehaviour
     }
     void OnCollisionExit2D(Collision2D Obj)
     {
-        if (Obj.gameObject.tag == "Soleil")
+        if (Obj.gameObject.tag == "fire")
             print("Touché cartouche");
     }
     void takeDamage(int damage)

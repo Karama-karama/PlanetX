@@ -9600,6 +9600,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Soleil
       objectReference: {fileID: 0}
+    - target: {fileID: 1095640572745213570, guid: 7585ac3a488ab6f49821ff8a63661906,
+        type: 3}
+      propertyPath: m_TagString
+      value: fire
+      objectReference: {fileID: 0}
     - target: {fileID: 5541864275331236445, guid: 7585ac3a488ab6f49821ff8a63661906,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9670,6 +9675,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.12161777
       objectReference: {fileID: 0}
+    - target: {fileID: 7559612623717271497, guid: 7585ac3a488ab6f49821ff8a63661906,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d7f94303a5f51b94abc4f9190b73547d,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7585ac3a488ab6f49821ff8a63661906, type: 3}
 --- !u!1001 &8682175733628535074

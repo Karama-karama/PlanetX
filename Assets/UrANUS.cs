@@ -9,7 +9,7 @@ public class UrANUS : MonoBehaviour
     {
         if (other.CompareTag("Uranus"))
         {
-            SceneManager.LoadScene(14);
+            SceneManager.LoadScene(8);
         }
     }
 }

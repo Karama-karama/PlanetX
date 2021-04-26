@@ -7,9 +7,9 @@ public class MovesceneNeptune : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Terre"))
+        if (other.CompareTag("Neptune"))
         {
-            SceneManager.LoadScene(14);
+            SceneManager.LoadScene(9);
         }
     }
 }

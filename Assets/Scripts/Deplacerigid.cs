@@ -72,7 +72,7 @@ public class Deplacerigid : MonoBehaviour
         currentHealth -= damage;
         healthBar.setHealth(currentHealth);
 
-       
+       print("spaceship touche  astroide");
     }
     
 
