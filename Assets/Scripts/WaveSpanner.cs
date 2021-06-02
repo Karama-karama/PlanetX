@@ -12,39 +12,89 @@ public class WaveSpanner : MonoBehaviour
       public int count;
       public float rate;
     }
-    public Wave[] array;
+    public Wave[] waves;
     private int nextWave =0;
+
+    public Transform[] spawnPoints;
     
     public float timeBetweenWaves = 5f;
     public float waveCountDown;
 
+    private float searchCountdown = 1f;
+
     private SpawnState state = SpawnState.COUNTING;
     void Start()
     {
+        if (spawnPoints.Length ==0)
+          {
+              Debug.Log("Erreur, no spawnPoint referenced");
+          }
         waveCountDown = timeBetweenWaves;
     }
     void Update()
     {
+        if (state == SpawnState.WAITING)
+        {
+            //check if enemies are still alive
+            if ( !EnemyIsAlive() ){
+                //Begin a new round
+                WaveCompleted();
+                return;
+
+            }
+            else 
+            {
+                return;
+            }
+        }
         if ( waveCountDown <= 0 ) 
         {
-           if ( state != spawnState.SPANNiNG)
+           if ( state != SpawnState.SPANNING)
            {
                // Start spanning wave
-               StartCoroutine( Spanwave (waves [nextWave]));
+               StartCoroutine(SpanWave (waves[nextWave]));
            }
         }
            else 
            {
-               waveCountDown = Time.DeltaTime;
+               
+               waveCountDown -= Time.deltaTime;
            }
         }
-        IEnumerator SpanWave(wave _wave)
+        void WaveCompleted() 
         {
+            Debug.Log("Wave completed");
+            state = SpawnState.COUNTING;
+            waveCountDown = timeBetweenWaves;
+
+            if (nextWave +1 > waves.Length -1)
+            {
+                nextWave =0; 
+                Debug.Log("All wabes comple !, now looping");
+            }
+            nextWave++;
+        }
+        bool EnemyIsAlive()
+        {
+            searchCountdown -= Time.deltaTime;
+            if (searchCountdown <=0f)
+            {
+                searchCountdown = 1f;
+                if (GameObject.FindGameObjectWithTag("Enemy") == null)
+            {
+                return false;
+            }
+            }
+            return true;
+        }
+        IEnumerator SpanWave(Wave _wave)
+        {
+            Debug.Log("Span wave");
             state = SpawnState.SPANNING;
             // Span 
             for (int i=0; i< _wave.count; i++) 
             {
-               SpanEnemy(wave.enemy);
+               SpanEnemy(_wave.enemy);
                yield return new WaitForSeconds(1f/_wave.rate);
 
             }
@@ -54,7 +104,13 @@ public class WaveSpanner : MonoBehaviour
         void SpanEnemy (Transform _enemy)
         {
           // span enemy
-          Debug.log("Spanning enemy" +_enemy.name);
+          Debug.Log("Spanning enemy" +_enemy.name);
+          if (spawnPoints.Length ==0)
+          {
+              Debug.Log("Erreur, no spawnPoint referenced");
+          }
+          Transform _sp = spawnPoints[Random.Range (0, spawnPoints.Length)];
+          Instantiate(_enemy, _sp.position, _sp.rotation);
         }   
          
 

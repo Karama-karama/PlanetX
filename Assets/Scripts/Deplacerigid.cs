@@ -38,11 +38,6 @@ public class Deplacerigid : MonoBehaviour
         Vector2 MovePerso = new Vector2(MoveHorizontal, MoveVertical);
         // r.AddForce(MovePerso * speed);
         r.velocity = MovePerso * speed;
-        // health update
-        /** if (Input.GetKeyDown(KeyCode.Space))
-         {
-             takeDamage(1);
-         }*/
 
          // shooting guns 
          if (Input.GetKeyDown(KeyCode.Space))
@@ -53,7 +48,7 @@ public class Deplacerigid : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D Obj)
     {
-        if (Obj.gameObject.tag == "comet")
+        if (Obj.gameObject.tag == "comet" || Obj.gameObject.tag == "Enemy")
             Destroy(Obj.gameObject);
         // health update
         takeDamage(1);
@@ -65,14 +60,18 @@ public class Deplacerigid : MonoBehaviour
     void OnCollisionExit2D(Collision2D Obj)
     {
         if (Obj.gameObject.tag == "comet")
-            print("spaceship ne touche pas astroide");
+            {print("spaceship ne touche pas astroide");}
+        else if (Obj.gameObject.tag == "Enemy")
+        {
+            print(" Touching Enemy");
+        }
     }
     void takeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.setHealth(currentHealth);
 
-       print("spaceship touche  astroide");
+       print("spaceship touché");
     }
     
 
