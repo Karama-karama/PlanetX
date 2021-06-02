@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Movescenesaturne1.cs" />
      <Compile Include="Assets\Scripts\Rotation.cs" />
      <Compile Include="Assets\Scripts\VolumePlayerMusic.cs" />
+     <Compile Include="Assets\Scripts\WaveSpanner.cs" />
      <Compile Include="Assets\Scripts\axis.cs" />
      <Compile Include="Assets\Scripts\follow_player.cs" />
      <Compile Include="Assets\UrANUS.cs" />
