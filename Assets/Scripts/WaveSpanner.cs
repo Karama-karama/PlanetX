@@ -3,7 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WaveSpanner : MonoBehaviour
-{  public enum SpawnState {SPANNING, WAITING, COUNTING};
+{  
+        public Rigidbody2D Soleil;
+    public Transform soleilfils;
+    public Rigidbody2D Clone ;
+    
+    public enum SpawnState {SPANNING, WAITING, COUNTING};
      [System.Serializable] // This allow us to change the values in Unity
     public class Wave
     {
@@ -39,6 +44,7 @@ public class WaveSpanner : MonoBehaviour
             if ( !EnemyIsAlive() ){
                 //Begin a new round
                 WaveCompleted();
+                 
                 return;
 
             }
@@ -66,6 +72,7 @@ public class WaveSpanner : MonoBehaviour
             Debug.Log("Wave completed");
             state = SpawnState.COUNTING;
             waveCountDown = timeBetweenWaves;
+          
 
             if (nextWave +1 > waves.Length -1)
             {
@@ -91,6 +98,7 @@ public class WaveSpanner : MonoBehaviour
         {
             Debug.Log("Span wave");
             state = SpawnState.SPANNING;
+            
             // Span 
             for (int i=0; i< _wave.count; i++) 
             {

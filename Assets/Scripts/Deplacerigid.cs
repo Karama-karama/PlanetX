@@ -48,19 +48,22 @@ public class Deplacerigid : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D Obj)
     {
-        if (Obj.gameObject.tag == "comet" || Obj.gameObject.tag == "Enemy")
+         bool damagePlayer = false;
+        if (Obj.gameObject.tag == "comet")
             Destroy(Obj.gameObject);
         // health update
         takeDamage(1);
        
             if (currentHealth == 0)
             Application.LoadLevel(13);
+
+        
            
     }
     void OnCollisionExit2D(Collision2D Obj)
     {
         if (Obj.gameObject.tag == "comet")
-            {print("spaceship ne touche pas astroide");}
+            {print("spaceship touche astroide");}
         else if (Obj.gameObject.tag == "Enemy")
         {
             print(" Touching Enemy");
