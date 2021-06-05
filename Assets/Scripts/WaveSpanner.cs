@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class WaveSpanner : MonoBehaviour
 {  
-        public Rigidbody2D Soleil;
-    public Transform soleilfils;
-    public Rigidbody2D Clone ;
+      
     
     public enum SpawnState {SPANNING, WAITING, COUNTING};
      [System.Serializable] // This allow us to change the values in Unity
     public class Wave
     {
-      public string name; 
+   public Rigidbody2D Soleil;
+     public Transform soleilfils;
+    public Rigidbody2D Clone ;
+          public string name; 
       public Transform enemy;
       public int count;
       public float rate;
@@ -35,6 +36,7 @@ public class WaveSpanner : MonoBehaviour
               Debug.Log("Erreur, no spawnPoint referenced");
           }
         waveCountDown = timeBetweenWaves;
+         
     }
     void Update()
     {
@@ -66,6 +68,8 @@ public class WaveSpanner : MonoBehaviour
                
                waveCountDown -= Time.deltaTime;
            }
+
+           
         }
         void WaveCompleted() 
         {
@@ -102,9 +106,16 @@ public class WaveSpanner : MonoBehaviour
             // Span 
             for (int i=0; i< _wave.count; i++) 
             {
-               SpanEnemy(_wave.enemy);
-               yield return new WaitForSeconds(1f/_wave.rate);
 
+               SpanEnemy(_wave.enemy);
+               //NEWWWWWW *******
+          /** if (Input.GetKey(KeyCode.Mouse0))
+           { //Instantiate(Soleil, new Vector3(soleilfils.position.x,soleilfils.position.y,2),soleilfils.rotation);
+            Clone = Instantiate (Soleil, new Vector3 (soleilfils.position.x, soleilfils.position.y,2), soleilfils.rotation);
+            Clone.AddForce( new Vector3(3000,0,0)); 
+            Destroy(Clone.gameObject, 10);
+             } **/             
+            yield return new WaitForSeconds(1f/_wave.rate);
             }
             state= SpawnState.WAITING;
             yield break;
