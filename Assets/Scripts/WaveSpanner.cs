@@ -109,12 +109,14 @@ public class WaveSpanner : MonoBehaviour
 
                SpanEnemy(_wave.enemy);
                //NEWWWWWW *******
-          /** if (Input.GetKey(KeyCode.Mouse0))
+           if (Input.GetKey(KeyCode.Mouse0))
            { //Instantiate(Soleil, new Vector3(soleilfils.position.x,soleilfils.position.y,2),soleilfils.rotation);
-            Clone = Instantiate (Soleil, new Vector3 (soleilfils.position.x, soleilfils.position.y,2), soleilfils.rotation);
+           
+            Clone = Instantiate ( Soleil, new Vector3 (soleilfils.position.x, soleilfils.position.y,2), soleilfils.rotation);
             Clone.AddForce( new Vector3(3000,0,0)); 
             Destroy(Clone.gameObject, 10);
-             } **/             
+             }
+                        
             yield return new WaitForSeconds(1f/_wave.rate);
             }
             state= SpawnState.WAITING;
